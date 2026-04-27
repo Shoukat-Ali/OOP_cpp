@@ -1,4 +1,10 @@
 // The following code snippet is from the textbook
+/**
+ * This a simple program to demonstrate the use of if statements in C++.
+ * To compile and run this program, please run the following GNU C++ command in the terminal:
+ * 
+ *      g++ -std=c++11 simple_if_exmp.cpp -o test
+ */
 #include <iostream>
 
 using std::cout; // program uses cout

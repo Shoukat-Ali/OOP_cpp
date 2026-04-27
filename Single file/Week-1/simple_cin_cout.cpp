@@ -1,3 +1,10 @@
+/**
+ * This a simple program to demonstrate the use of cin and cout in C++.
+ * To compile and run this program, please run the following GNU C++ command in the terminal:
+ * 
+ *      g++ -std=c++11 simple_cin_cout.cpp -o test
+ */
+
 #include <iostream>
 
 int main() 

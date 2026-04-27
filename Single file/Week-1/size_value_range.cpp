@@ -1,3 +1,10 @@
+/**
+ * This a simple program to demonstrate the use of sizeof operator in C++.
+ * To compile and run this program, please run the following GNU C++ command in the terminal:
+ * 
+ *      g++ -std=c++11 size_value_range.cpp -o test
+ */
+
 #include <iostream>
 
 int main()
