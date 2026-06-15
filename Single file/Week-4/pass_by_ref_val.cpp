@@ -27,6 +27,9 @@ int main() {
     // ++w;
     // ++y;
     ++x;
+    cout << "y is an alias of x wehre the value is : " << y << endl;
+    y = z;   // value of z is assigned to x
+    cout << "y is updated to y = z, therefore, we x is : " << x << endl;
 
     cout << "w = " << w << " reference to y to x\n";
     
