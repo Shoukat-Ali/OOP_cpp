@@ -15,6 +15,12 @@ int main() {
     int arr[5]{10, 20, 30, 40, 50};
     int* ptr1{arr};    	// points to arr[0]
     int* ptr2{&arr[4]};	// points to arr[4]
+
+    // Usage of void pointer
+    void* ptr3 = arr;
+    // cout << *ptr3;      // Error pionter to unknown type, therefore, cannot de-reference
+    // ptr2 = ptr3;        // Error unknown type cannot be pointed to by known pointer type
+    // ptr2 = reinterpret_cast<int*> (ptr3);
     
     // cout << "Memory address of arr: " << arr << endl
     //      << "Memory address ptr1 points to: " << ptr1 << endl
@@ -46,6 +52,7 @@ int main() {
     // cout << "Memory address ptr2 points to: " << ptr2 << endl;
     cout << "Content of memory location that ptr2 points to: " << *ptr2 << endl;
     
+    ptr2++;
     int x = ptr1 - ptr2;
 
     cout << "For x = ptr1 - ptr2,  we have: " << x << endl;
