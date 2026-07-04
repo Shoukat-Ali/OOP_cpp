@@ -3,9 +3,13 @@
  * A class is a user-defined data type that represents an entity with attributes (data members) and behaviors (member functions).
  * The class serves as a blueprint for creating objects, which are instances of the class.
  * 
- * To compile and create executable file of this program, please run the following GNU C++ command in the terminal:
+ * To compile and create executable file of this program, please run the following GNU C++ command in a terminal:
  * 
  *      g++ -Wall -std=c++11 mainAccount.cpp -o test
+ * 
+ * Note: Since we are using VS Code IDE, therefore, the use of forward slash (/) for header file path works on Linux and Windows. 
+ * Please sure that when you run the above GNU C++ command,  the terminal is set to PowerShell on Windows.
+ * 
  */
 #include <iostream>
 #include <string>

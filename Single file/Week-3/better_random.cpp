@@ -18,13 +18,15 @@ int main()
 
     // use the default random-number generation engine to
     // produce uniformly distributed pseudorandom int values from 1 to 6
-    std::default_random_engine engine{static_cast<unsigned int>(time(nullptr))};
-    std::uniform_int_distribution<unsigned int> randomInt{1, 6};
+    // std::default_random_engine engine{static_cast<unsigned int>(time(nullptr))};
+    std::default_random_engine myEng{static_cast<unsigned int>(time(nullptr))};
+    // std::uniform_int_distribution<unsigned int> randomInt{1, 6};
+    std::uniform_int_distribution<unsigned int> rInt{1, 6};
 
     cout << "Rolling a six-sided die 24 times using C++11 <random> library:" << endl;
     for (unsigned int i{1}; i <= 24; ++i) {
         // pick random number from 1 to 6 and output it
-        cout << std::setw(10) << randomInt(engine);
+        cout << std::setw(10) << rInt(myEng);
         // if counter is divisible by 6, start a new line of output
         if (i % 6 == 0) {
             cout << endl;
