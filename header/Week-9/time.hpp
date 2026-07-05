@@ -5,10 +5,9 @@
 #include <string>
 
 // Using header/include guards to prevent multiple inclusions of header
-#ifndef TIME_H
-#define TIME_H
+#ifndef TIME_HPP
+#define TIME_HPP
 
-// Time class definition
 class Time {
 public:
     void setTime(int, int, int); // set hour, minute and second

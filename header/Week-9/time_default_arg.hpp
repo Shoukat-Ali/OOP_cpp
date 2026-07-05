@@ -5,13 +5,14 @@
 #include <string>
 
 // prevent multiple inclusions of header
-#ifndef TIME_H
-#define TIME_H
+#ifndef TIME_DEFAULT_ARG_HPP
+#define TIME_DEFAULT_ARG_HPP
 
-// Time class definition
 class Time {
 public:
     explicit Time(int = 0, int = 0, int = 0); // default constructor
+    // Overloading constructors and delegating constructors to be discussed
+
     // set functions
     void setTime(int, int, int); // set hour, minute, second
     void setHour(int); // set hour (after validation)
