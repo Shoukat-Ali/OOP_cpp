@@ -28,11 +28,22 @@ using std::cout; using std::endl;
 int main() {
     // create two Account objects
     Account account1{"Jane Green"};
-    Account account2{"John Blue"};
-    Account account3; 
+    Account account2;
+
+    // create a reference to account1 (note: no new Account object is created)
+    Account& account1Ref{account1};
+    // create a pointer to account1
+    Account* accountPtr{nullptr};
     
     // display initial value of name for each Account
     cout << "account1 name is: " << account1.getName() << endl;
     cout << "account2 name is: " << account2.getName() << endl;
-    cout << "account3 name is: " << account3.getName() << endl;
+
+    // setting name using reference to account1
+    account1Ref.setName("Willams Jr.");
+    cout << "account1 name is: " << account1Ref.getName() << endl;
+    // setting name using pointer to account2
+    accountPtr = &account2;
+    accountPtr->setName("David Smith");
+    cout << "account2 name is: " << accountPtr->getName() << endl;
 }
