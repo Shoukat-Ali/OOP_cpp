@@ -21,7 +21,7 @@
 #include <iostream>
 #include "../../header/Week-9/const_dest_ord.hpp" 
 
-void create(); // prototype
+void myFunc(); // prototype
 
 CreateAndDestroy first{1, "(global before main)"}; // global object
 
@@ -30,7 +30,7 @@ int main() {
     CreateAndDestroy second{2, "(local in main)"};
     static CreateAndDestroy third{3, "(local static in main)"};
     
-    create(); // call function to create objects
+    myFunc(); // call function to create objects
     std::cout << "\nMAIN FUNCTION: EXECUTION RESUMES" << std::endl;
     CreateAndDestroy fourth{4, "(local in main)"};
     std::cout << "\nMAIN FUNCTION: EXECUTION ENDS" << std::endl;
@@ -38,11 +38,11 @@ int main() {
 }
 
 // function to create objects
-void create() {
-    std::cout << "\nCREATE FUNCTION: EXECUTION BEGINS" << std::endl;
+void myFunc() {
+    std::cout << "\nMYFUNC FUNCTION: EXECUTION BEGINS" << std::endl;
     CreateAndDestroy fifth{5, "(local in create)"};
     
     static CreateAndDestroy sixth{6, "(local static in create)"};
     CreateAndDestroy seventh{7, "(local in create)"};
-    std::cout << "\nCREATE FUNCTION: EXECUTION ENDS" << std::endl;
+    std::cout << "\nMYFUNC FUNCTION: EXECUTION ENDS" << std::endl;
 }
