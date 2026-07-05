@@ -1,12 +1,21 @@
 /**
  * This is an attempt to demonstrate the use of class header file that contains all definitions.
  * The class contains user defined constructor with one parameter to initialize the data member of the class.
- * To compile and create executable file of this program, please run the following GNU C++ command in a terminal:
- * 
- *      g++ -Wall -Werror -std=c++11 Acc_const_test.cpp ../../src/Week-9/Acc_const.cpp -o test
  * 
  * Note: Since we are using VS Code IDE, therefore, the use of forward slash (/) for header file path works on Linux and Windows. 
  * Please sure that when you run the above GNU C++ command,  the terminal is set to PowerShell on Windows.
+ * 
+ * Technique-1: To compile and create executable file of this program, please run the following GNU C++ command in a terminal:
+ * 
+ *      g++ -Wall -Werror -std=c++11 Acc_const_test.cpp ../../src/Week-9/Acc_const.cpp -o test
+ * 
+ * Technique-2: We compile class-implementation and client-code files separately to create object file. 
+ * After that, we link the object files to create an executable file. 
+ * Please run the following GNU C++ commands in a terminal:
+ * 
+ *      g++ -Wall -Werror -std=c++11 -c ../../src/Week-9/Acc_const.cpp -o Acc_const.o
+ *      g++ -Wall -Werror -std=c++11 -c Acc_const_test.cpp -o Acc_const_test.o
+ *      g++ -Wall -Werror -std=c++11 Acc_const.o Acc_const_test.o -o test
  * 
  */
 #include <iostream>
