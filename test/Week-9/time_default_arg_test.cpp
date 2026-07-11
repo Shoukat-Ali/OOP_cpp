@@ -48,6 +48,6 @@ int main() {
         std::cerr << "Exception while initializing t1: " << e.what() << std::endl;
     }
 
-    displayTime("t1: hour, minute and second specified", t1);
+    displayTime("After Exception, t1: hour, minute and second specified", t1);
     return 0;
 }

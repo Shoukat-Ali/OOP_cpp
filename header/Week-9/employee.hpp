@@ -1,6 +1,6 @@
 /**
  * This example is taken from the textbook to demonstrate composition/aggregation using 
- * Date class object as data member.
+ * Date class object as data members in the class Employee.
  */
 
 #include <string>
