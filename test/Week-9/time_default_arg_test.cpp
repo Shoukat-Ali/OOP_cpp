@@ -45,7 +45,7 @@ int main() {
         Time t1{27, 74, 99}; // all bad values specified
     }
     catch (std::invalid_argument& e) {
-        std::cerr << "Exception while initializing t1: " << e.what() << std::endl;
+        std::cout << "Exception while initializing t1: " << e.what() << std::endl;
     }
 
     displayTime("After Exception, t1: hour, minute and second specified", t1);
