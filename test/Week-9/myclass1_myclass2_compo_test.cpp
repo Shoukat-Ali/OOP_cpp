@@ -25,10 +25,10 @@
 
 int main() {
     // MyClass1 objmc1(10);
-    // MyClass2 objmc2(20, objmc1);
-    MyClass2 objmc3;
+    // MyClass2 objmc21(20, objmc1);
+    MyClass2 objmc22;
 
-    // objmc2.display();
-    objmc3.display();
+    // objmc21.display();
+    objmc22.display();
     return 0;
 }
