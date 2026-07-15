@@ -20,9 +20,21 @@ Date::Date(unsigned int mn, unsigned int dy, unsigned int yr) : month{mn}, day{c
 
 // print Date object in form month/day/year
 std::string Date::toString() const {
-    std::ostringstream output;
-    output << month << '/' << day << '/' << year;
-    return output.str();
+    // create string in the form month/day/year using 
+    // Technique-1: class std::ostringstream 
+    // std::ostringstream output;
+    // output << month << '/' << day << '/' << year;
+    // return output.str();
+    // Technique-2: class std::string
+    std::string output; 
+    output = std::to_string(month) + '/' + std::to_string(day) + '/' + std::to_string(year);
+    // output.append(std::to_string(month));
+    // output.append("/"); 
+    // output.append(std::to_string(day));
+    // output.append("/"); 
+    // output.append(std::to_string(year));
+    return output;
+
 }
 
 // output Date object to show when its destructor is called

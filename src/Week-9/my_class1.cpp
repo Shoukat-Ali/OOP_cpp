@@ -14,7 +14,7 @@ MyClass1::MyClass1(int value) {
     else {
         x = 0; // Default to 0 if a negative value is provided
     }
-    std::cout << "MyClass1 one parameter constructor initializes x to: " << x << std::endl;
+    std::cout << "MyClass1 one parameter constructor initializes x: " << x << std::endl;
 }
 
 // Setter function to set the value of private data member x
@@ -32,5 +32,5 @@ int MyClass1::getX() const {
 // Destructor to clean up resources (if any) when an object of MyClass1 is destroyed
 MyClass1::~MyClass1() {
     x = 0; // Reset x to 0 (not strictly necessary, but good practice)
-    std::cout << "MyClass1 destructor resets x to: " << x << std::endl;
+    std::cout << "MyClass1 destructor resets x: " << x << std::endl;
 }

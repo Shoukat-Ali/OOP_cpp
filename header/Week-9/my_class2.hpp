@@ -11,14 +11,15 @@
 
 class MyClass2 {
 public:
-    MyClass2();
-    MyClass2(int, MyClass1 obj1);
+    MyClass2();     // Default constructor
+    MyClass2(double, MyClass1 obj1);       // Constructor with two parameters
     void display() const;
-    ~MyClass2();
+    ~MyClass2();    // Destructor
 
 private:
     MyClass1 objmc1;    // An object of MyClass1 as a data member
-    int y{0};
+    double y{0.0};
+    MyClass1 objmc2;    // An object of MyClass1 as a data member
 };
 
 #endif

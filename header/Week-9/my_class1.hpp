@@ -8,10 +8,10 @@
 
 class MyClass1 {
 public:
-    explicit MyClass1(int = 0);
+    explicit MyClass1(int = 0);     // Default constructor due to default parameter
     void setX(int);
     int getX() const;
-    ~MyClass1();
+    ~MyClass1();        // Destructor
 
 private:
     int x;
