@@ -25,7 +25,9 @@ std::string Date::toString() const {
     // std::ostringstream output;
     // output << month << '/' << day << '/' << year;
     // return output.str();
-    // Technique-2: class std::string
+    /**Technique-2: class std::string and std::to_string() function
+     * Note that std::to_string() converts numeric value to string.
+     */
     std::string output; 
     output = std::to_string(month) + '/' + std::to_string(day) + '/' + std::to_string(year);
     // output.append(std::to_string(month));
@@ -34,7 +36,6 @@ std::string Date::toString() const {
     // output.append("/"); 
     // output.append(std::to_string(year));
     return output;
-
 }
 
 // output Date object to show when its destructor is called

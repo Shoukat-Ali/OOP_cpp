@@ -67,11 +67,19 @@ unsigned int Time::getSecond() const {
 
 // return Time as a string in universal-time format (HH:MM:SS)
 std::string Time::toUniversalString() const {
+    /**create string in the form hour:minute:second using 
+     * Technique-1: class std::ostringstream */
     std::ostringstream output;
     output  << std::setfill('0') << std::setw(2) << getHour() << ":"
             << std::setw(2) << getMinute() << ":" 
             << std::setw(2) << getSecond();
     return output.str();
+    /**Technique-2: class std::string and std::to_string() function
+     * Note that std::to_string() converts numeric value to string.
+     */
+    // std::string output; 
+    // output = std::to_string(getHour()) + ':' + std::to_string(getMinute()) + ':' + std::to_string(getSecond());
+    // return output;
 }
 
 // return Time as string in standard-time format (HH:MM:SS AM or PM)

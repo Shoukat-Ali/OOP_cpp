@@ -25,10 +25,18 @@ Employee::Employee(const std::string& first, const std::string& last,
 
 // print Employee object
 std::string Employee::toString() const {
-    std::ostringstream output;
-    output  << lastName << ", " << firstName << " Hired: "
-            << hireDate.toString() << " Birthday: " << birthDate.toString();
-    return output.str();
+    /**create string  
+     * Technique-1: class std::ostringstream */
+    // std::ostringstream output;
+    // output  << lastName << ", " << firstName << " Hired: "
+    //         << hireDate.toString() << " Birthday: " << birthDate.toString();
+    // return output.str();
+    /**Technique-2: class std::string and std::to_string() function
+     * Note that std::to_string() converts numeric value to string.
+     */
+    std::string output;
+    output = lastName + ", " + firstName + " Hired: " + hireDate.toString() + " Birthday: " + birthDate.toString();
+    return output;
 }
 
 
