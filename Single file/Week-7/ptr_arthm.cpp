@@ -1,7 +1,7 @@
 /**
  * This is an attempt to demonstrate the pointer arithmetic with raw/built-in array;
  * 
- * To compile and create and executable file of this program, , please run the following GNU C++ command in a terminal:
+ * To compile and create and executable file of this program, please run the following GNU C++ command in a terminal:
  * 
  *      g++ -Wall -Werror -std=c++11 ptr_arthm.cpp -o test
  */

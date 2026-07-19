@@ -1,7 +1,7 @@
 /**
  * This is an attempt to demonstrate a simple exception handling for invalid argument when a function is called.
  * 
- * To compile and create and executable file of this program, , please run the following GNU C++ command in a terminal:
+ * To compile and create and executable file of this program, please run the following GNU C++ command in a terminal:
  * 
  *      g++ -Wall -Werror -std=c++11 simple_except.cpp -o test
  *

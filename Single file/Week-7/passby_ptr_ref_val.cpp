@@ -2,7 +2,7 @@
  * This is an attempt to demonstrate passing arguments to a funcion using 
  * pass-by-reference with pointer, pass-by-reference, and pass-by-value.
  * 
- * To compile and create and executable file of this program, , please run the following GNU C++ command in a terminal:
+ * To compile and create and executable file of this program, please run the following GNU C++ command in a terminal:
  * 
  *      g++ -Wall -Werror -std=c++11 passby_ptr_ref_val.cpp -o test
  */

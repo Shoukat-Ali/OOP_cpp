@@ -1,7 +1,7 @@
 /**
  * This is an attempt to demonstrate the use of pointer variable.
  * 
- * To compile and create and executable file of this program, , please run the following GNU C++ command in a terminal:
+ * To compile and create and executable file of this program, please run the following GNU C++ command in a terminal:
  * 
  *      g++ -Wall -Werror -std=c++11 simple_ptr.cpp -o test
  */
