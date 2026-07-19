@@ -3,7 +3,7 @@
  * 
  * To compile and create executable file of this program, please run the following GNU C++ command in a terminal:
  *      
- *     g++ -Wall -Werror -std=c++11 string_class_func.cpp -o test
+ *     g++ -Wall -Werror -std=c++11 std_string_func.cpp -o test
  * 
  */
 
@@ -41,11 +41,7 @@ int main() {
     std::cout << "\n\ns1 += \" to you\" yields\n";
     s1 += " to you";
     std::cout << "s1 = " << s1;
-    // test string concatenation with a C++14 string-object literal
-    std::cout << "\n\ns1 += \", have a great day!\" yields\n";
-    s1 += ", have a great day!";
-    std::cout << "s1 = " << s1 << "\n\n";
-
+    
     // test string member function substr
     std::cout   << "The substring of s1 starting at location 0 for\n"
                 << "14 characters, s1.substr(0, 14), is:\n"
