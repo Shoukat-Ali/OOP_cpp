@@ -9,8 +9,8 @@
  * 
  */
 
-#ifndef CELL_PHONE_NUMBER_HPP
-#define CELL_PHONE_NUMBER_HPP
+#ifndef CELL_PHONE_NUM_HPP
+#define CELL_PHONE_NUM_HPP
 
 #include <iostream>
 #include <string>
