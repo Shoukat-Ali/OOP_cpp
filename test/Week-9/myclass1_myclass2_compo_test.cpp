@@ -25,7 +25,7 @@
 
 int main() {
     // MyClass1 objmc1(10);
-    // MyClass2 objmc21(20, objmc1);
+    // MyClass2 objmc21{20.0, objmc1};
     MyClass2 objmc22;
 
     // objmc21.display();

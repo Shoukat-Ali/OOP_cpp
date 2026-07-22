@@ -14,7 +14,9 @@ class User {
 public:
     // Conversion Constructor (takes a single argument)
     // Note that the explicit keyword is not used here, allowing implicit conversion from std::string to User.
-    User(std::string userName) : name(userName) {}
+    // User(std::string userName) : name(userName) { }
+    // Preventing implicit conversion
+    explicit User(std::string userName) : name(userName) { }
 
     void printName() const {
         std::cout << "User Name: " << name << std::endl;
@@ -34,9 +36,10 @@ int main() {
     // creating an object
     User user1("Alice");
     
-    // Implicit conversion: Passing a std::string where a User object is expected
-    std::string nameStr = "Bob";
-    displayUser(nameStr); // Automatically converts nameStr to a User object
-
+    // Implicit conversion
+    // std::string nameStr = "Bob";
+    // displayUser(nameStr); // Automatically converts nameStr to a User object
+    // Explicit single-argument constructor call
+    displayUser(User{"Bob"}); 
     return 0;
 }

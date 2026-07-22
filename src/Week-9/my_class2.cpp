@@ -17,7 +17,7 @@ MyClass2::MyClass2() {
 
 
 // Constructor with two parameters
-MyClass2::MyClass2(double value, MyClass1 obj1) : objmc1(obj1) {
+MyClass2::MyClass2(double value, MyClass1 obj1) : objmc1{obj1} {
     if (value > 0.0) {
         y = value;
     }
