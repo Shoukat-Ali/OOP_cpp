@@ -48,7 +48,7 @@ Coordinate& Coordinate::operator--() {
 // postfix decrement (obj--) as member function
 Coordinate Coordinate::operator--(int) {
     if (x == std::numeric_limits<int>::min() || y == std::numeric_limits<int>::min()) {
-        throw std::overflow_error("Integer underflow danger");
+        throw std::underflow_error("Integer underflow danger");
     }
     Coordinate temp = *this; // Save current state
     x--;
