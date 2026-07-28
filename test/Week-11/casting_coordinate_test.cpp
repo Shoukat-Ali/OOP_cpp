@@ -3,7 +3,7 @@
  * 
  * Technique-1: To compile and create executable file of this program, please run the following GNU C++ command in a terminal:
  * 
- *      g++ -Wall -Werror -std=c++11 casting_coordinate_test ../../src/Week-11/casting_coordinate.cpp -o test
+ *      g++ -Wall -Werror -std=c++11 casting_coordinate_test.cpp ../../src/Week-11/casting_coordinate.cpp -o test
  * 
  * Technique-2: We compile class-implementation and client-code files separately to create object file. 
  * After that, we link the object files to create an executable file. 
