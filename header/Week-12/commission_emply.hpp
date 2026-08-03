@@ -27,6 +27,9 @@ public:
     double getCommissionRate() const;
     double earnings() const; // calculate earnings
     std::string toString() const; // create string representation
+
+// For inheritance demonstration, we will make the data members protected instead of private
+// protected:
 private:
     std::string firstName;
     std::string lastName;
