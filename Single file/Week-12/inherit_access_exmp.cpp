@@ -1,5 +1,5 @@
 /**
- * This program is an attempt to show inheritance hierarchy and access
+ * This program is an attempt to show inheritance hierarchy and access using public and protected inheritance.
  * 
 */
 
