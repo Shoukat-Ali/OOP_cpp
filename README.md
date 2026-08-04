@@ -24,7 +24,7 @@ The best way to install the GNU toolchain on Windows today is through MSYS2, whi
 ### Step 2: Install the C++ Toolchain
 In the MSYS2 terminal that just opened, you need to tell it to download the actual compiler.  
 1. Copy and paste the following command into the MSYS2 terminal:  
-        `pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain`
+                `pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain`
 2. Press Enter when it asks which members to install (default = all)  
 3. Type Y and press Enter to proceed with the installation. This will download g++, gcc, and gdb (the debugger)
 
@@ -37,8 +37,8 @@ Even though g++ is now on your computer, Windows doesn't "see" it yet from the s
 5. Click OK on all windows to save.
 
 ### Step 4: Verify the Installation
-Open the Command Prompt (cmd) and type:
-		`g++ --version`
+Open the Command Prompt (cmd) and type:  
+                `g++ --version`
 
 If you see a version number (e.g., 13.2.0), you’ve successfully installed GNU C++!
 
