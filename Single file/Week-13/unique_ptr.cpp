@@ -3,6 +3,10 @@
  * 
  *      g++ -Wall -Werror -std=c++11 unique_ptr.cpp -o test
  * 
+ * For C++14
+ * 
+ *     g++ -Wall -Werror -std=c++14 unique_ptr.cpp -o test
+ * 
  */
 
 
@@ -25,7 +29,7 @@ int main() {
     std::unique_ptr<MyClass> ptr1{new MyClass()};
     // C++14 syntax
     // std::unique_ptr<MyClass> ptr1 = std::make_unique<MyClass>();
-    
+
     // The statement is incorrect std::unique_ptr<MyClass> ptr1 = new MyClass()
     // because the constructor of std::unique_ptr that accepts a raw pointer is marked as explicit. 
     // This is a deliberate design choice in the C++ Standard Library to prevent accidental and unsafe conversions 
