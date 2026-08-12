@@ -23,6 +23,7 @@ public:
 int main() {
     // Create a shared_ptr
     std::shared_ptr<MyClass> ptr1{new MyClass()};
+    // std::shared_ptr<MyClass> ptr1 = new MyClass();  // Error
     // Note: Best practice is to use std::shared_ptr<MyClass> ptr1 = std::make_shared<MyClass>(); 
     // which is more efficient and safer because it allocates the control block and object together.
     // std::shared_ptr<MyClass> ptr1 = std::make_shared<MyClass>();
