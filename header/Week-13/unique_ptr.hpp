@@ -7,7 +7,7 @@
 
 class MyInteger {
 public:
-    MyInteger(int i = 0); // MyInteger default constructor
+    explicit MyInteger(int i = 0); // MyInteger default constructor
     ~MyInteger(); // MyInteger destructor
     void setMyInteger(int i); // set MyInteger value
     int getMyInteger() const; // return MyInteger value

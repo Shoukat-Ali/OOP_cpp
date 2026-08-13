@@ -8,8 +8,8 @@
 class BClass {
 public:
     explicit BClass(int a); // default constructor
-    // ~BClass(); // destructor
-    virtual ~BClass(); // virtual destructor makes all derived class destructors virtual
+    ~BClass(); // destructor
+    // virtual ~BClass(); // virtual destructor makes all derived class destructors virtual
     void setBdata(int i); // set BClass value
     int getBdata() const; // return BClass value
     virtual void display() const; // display BClass value
