@@ -25,28 +25,33 @@
 #include "../../header/Week-13/vd_class.hpp"
 
 int main() {
-    // DClass dObj;
-    // BClass* basePtr{&dObj};
+    DClass dObj;
+    BClass* basePtr{&dObj};
     // BClass& baseRef{dObj};
-    BClass* basePtr{new DClass()};
+    // BClass* basePtr{new DClass()};
 
     // Set values using the base-class pointer
     basePtr->setBdata(10);
-    // basePtr->setDdata(20.5); 
+    // basePtr->setDdata(20.5); // Error
     // baseRef.setBdata(20);
+    // // Demonstrating dynamic_cast operation
+    // DClass* dPtr = dynamic_cast<DClass*>(basePtr);
+    // if (dPtr != nullptr) {
+    //     dPtr->setDdata(22.7);
+    // }
 
     // Display values using the base-class pointer
     basePtr->display();
     // baseRef.display();
 
-    delete basePtr; // Clean up the dynamically allocated memory
+    // delete basePtr; // Clean up to deallocate memory
 
 
     std::cout << "----------------------------------------" << std::endl;
 
     // Create a derived-class pointer pointing to a derived-class object
-    // DClass* derivedPtr{&dObj};
-    DClass* derivedPtr{new DClass()};
+    DClass* derivedPtr{&dObj};
+    // DClass* derivedPtr{new DClass()};
 
     derivedPtr->setBdata(30);
     derivedPtr->setDdata(40.5);
@@ -54,7 +59,7 @@ int main() {
     // Display values using the derived-class pointer
     derivedPtr->display(); // This will call the display method of DClass
 
-    delete derivedPtr; // Clean up the dynamically allocated memory
+    // delete derivedPtr; // Clean up to deallocate memory
 
     return 0;
 }

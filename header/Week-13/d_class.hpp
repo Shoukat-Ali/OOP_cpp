@@ -13,9 +13,9 @@ class DClass : public BClass {
 public:
     DClass(); // DClass default constructor
     ~DClass(); // DClass destructor
-    void setDdata(double i); // set DClass value
-    double getDdata() const; // return DClass value
-    void display() const; // display DClass value
+    void setDdata(double i); // set DClass data y
+    double getDdata() const; // return DClass data y
+    void display() const; // display DClass data y
 private:
     double y;
 };

@@ -9,11 +9,11 @@
 
 class BClass {
 public:
-    explicit BClass(int a); // BClass default constructor
+    explicit BClass(int a); // BClass constructor
     ~BClass(); // BClass destructor
-    void setBdata(int i); // set BClass value
-    int getBdata() const; // return BClass value
-    void display() const; // display BClass value
+    void setBdata(int i); // set BClass data x
+    int getBdata() const; // return BClass data x
+    void display() const; // display BClass data x
 private:
     int x;
 };

@@ -38,6 +38,13 @@ int main() {
     basePtr->display();
     // baseRef.display();
 
+    // // Demonstrating dynamic_cast
+    // DClass* dPtr = dynamic_cast<DClass*>(basePtr);
+    // if (dPtr != nullptr) {
+    //     dPtr->setDdata(20.5);
+    //     dPtr->display();
+    // }
+
 
     std::cout << "----------------------------------------" << std::endl;
 
