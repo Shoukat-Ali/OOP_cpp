@@ -2,7 +2,7 @@
 #include "../../header/Week-13/vb_class.hpp"
 
 
-BClass::BClass(int a) : x(a) {
+BClass::BClass(int a) : x{a} {
     std::cout << "BClass default constructor " << std::endl;
 }
 

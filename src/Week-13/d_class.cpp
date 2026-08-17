@@ -2,7 +2,7 @@
 #include "../../header/Week-13/d_class.hpp"
 
 
-DClass::DClass() : BClass(0), y(0.0) {
+DClass::DClass() : BClass{0}, y{0.0} {
 // DClass::DClass() {
     // y = 0.0;
     // BClass(0);
