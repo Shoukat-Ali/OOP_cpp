@@ -11,9 +11,9 @@
  * Please run the following GNU C++ commands in a terminal:
  * 
  *      g++ -c -Wall -Werror -std=c++11 bd_class_test.cpp -o bd_class_test.o
- *      g++ -c -Wall -Werror -std=c++11 ../../src/Week-13/b_class.cpp -o b_class.o
- *      g++ -c -Wall -Werror -std=c++11 ../../src/Week-13/d1_class.cpp -o d1_class.o
- *      g++ -c -Wall -Werror -std=c++11 ../../src/Week-13/d2_class.cpp -o d2_class.o
+ *      g++ -c -Wall -Werror -std=c++11 ../../src/Week-14/b_class.cpp -o b_class.o
+ *      g++ -c -Wall -Werror -std=c++11 ../../src/Week-14/d1_class.cpp -o d1_class.o
+ *      g++ -c -Wall -Werror -std=c++11 ../../src/Week-14/d2_class.cpp -o d2_class.o
  *      g++ bd_class_test.o b_class.o d1_class.o d2_class.o -o test
  * 
  */
