@@ -29,7 +29,6 @@
 #include "../../header/Week-14/salarypluscommission_employee.hpp"
 
 int main() {
-    std::vector<Employee*> empPtr;
     // Attempt to create objects
     // Note that object life is within the try block because local
     try{
