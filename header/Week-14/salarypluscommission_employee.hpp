@@ -14,7 +14,8 @@ class SalaryPlusCommissionEmployee : public CommissionEmployee {
 public:
     SalaryPlusCommissionEmployee(const std::string&, const std::string&, const std::string&, 
                         double = 0.0, double = 0.0, double = 0.0);
-    virtual ~SalaryPlusCommissionEmployee() = default;
+    // virtual ~SalaryPlusCommissionEmployee() = default;
+    virtual ~SalaryPlusCommissionEmployee();
 
     void setSalary(const double&); 
     double getSalary() const;

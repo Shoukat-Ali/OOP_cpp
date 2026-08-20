@@ -13,7 +13,8 @@
 class Employee {
 public:
     Employee(const std::string&, const std::string&, const std::string&);
-    virtual ~Employee() = default;
+    // virtual ~Employee() = default;
+    virtual ~Employee();
 
     void setFirstName(const std::string&); 
     std::string getFirstName() const; 

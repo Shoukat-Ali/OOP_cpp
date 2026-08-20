@@ -14,7 +14,8 @@ class CommissionEmployee : public Employee {
 public:
     CommissionEmployee(const std::string&, const std::string&, const std::string&, 
                         double = 0.0, double = 0.0);
-    virtual ~CommissionEmployee() = default;
+    // virtual ~CommissionEmployee() = default;
+    virtual ~CommissionEmployee();
 
     void setGrossSales(const double&); 
     double getGrossSales() const; 

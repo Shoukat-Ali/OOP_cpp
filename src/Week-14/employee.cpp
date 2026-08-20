@@ -1,11 +1,22 @@
+#include <iostream>
 #include <stdexcept>
 #include "../../header/Week-14/employee.hpp"
 
 Employee::Employee(const std::string& fn, const std::string& ln, const std::string& cnic) {
+    std::cout << "Employee Class constructor\n";
     setFirstName(fn);
     setLastName(ln);
     setCNICNumber(cnic);
 }
+
+
+Employee::~Employee() {
+    std::cout << "Employee Class destructor\n";
+    firstName = "";
+    lastName = "";
+    CNICNumber = "";
+}
+
 
 void Employee::setFirstName(const std::string& fn) {
     if (fn == "") {

@@ -1,3 +1,4 @@
+#include <iostream>
 #include <sstream>
 #include <stdexcept>
 #include <iomanip>
@@ -7,9 +8,17 @@
 SalaryPlusCommissionEmployee::SalaryPlusCommissionEmployee(const std::string& fn, const std::string& ln, 
                                 const std::string& cnic, double sale, double rate, double sly) 
                                 : CommissionEmployee(fn, ln, cnic, sale, rate) {
+        std::cout << "Salary Plus Commission Employee constructor\n";
         setSalary(sly);
 
 }
+
+
+SalaryPlusCommissionEmployee::~SalaryPlusCommissionEmployee() {
+    std::cout << "Salary Plus Commission Employee destructor\n";
+    salary = 0.00;
+}
+
     
 void SalaryPlusCommissionEmployee::setSalary(const double& sly) {
     if (sly <= 0.0) {

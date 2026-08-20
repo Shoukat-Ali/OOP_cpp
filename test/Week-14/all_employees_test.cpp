@@ -28,7 +28,18 @@
 #include "../../header/Week-14/commission_employee.hpp"
 #include "../../header/Week-14/salarypluscommission_employee.hpp"
 
+void stackdemo();
+void heapdemo();
+
+
 int main() {
+    // stackdemo();
+    heapdemo();
+    return 0;
+
+}
+
+void stackdemo() {
     // Attempt to create objects
     // Note that object life is within the try block because local
     try{
@@ -39,13 +50,49 @@ int main() {
         std::vector<Employee*> empPtr{&sEmp, &commEmp, &spEmp};
         std::cout << std::fixed << std::setprecision(2);
         for (auto ptr: empPtr) {
+            std::cout << std::string(40, '=') << std::endl;
             std::cout << ptr->toString() << "\nEarnings: " << ptr->earnings() << std::endl;
-            std::cout << std::string(25, '=') << std::endl;
         }
+        std::cout << std::string(40, '=') << std::endl;
     }
     catch(const std::invalid_argument& excp) {
         std::cout << "Exception: " << excp.what() << std::endl;
     }
-    return 0;
+}
 
+
+void heapdemo() {
+    std::vector<Employee*> empPtr;
+    // Attempt to create objects on heap
+    try{
+        empPtr.push_back(new SalaryEmployee("ABC", "DEF", "34201-1234567-a", 80000));
+    }
+    catch(const std::invalid_argument& excp) {
+        std::cout << "Exception: " << excp.what() << std::endl;
+    }
+    try{
+        empPtr.push_back(new CommissionEmployee("GHI", "IJK", "34201-1234567-2", 10000, 0.35));
+    }
+    catch(const std::invalid_argument& excp) {
+        std::cout << "Exception: " << excp.what() << std::endl;
+    }
+    try{
+        empPtr.push_back(new SalaryPlusCommissionEmployee("LMN", "OPQ", "34201-1234567-3", 5000, 0.15, 3000));
+    }
+    catch(const std::invalid_argument& excp) {
+        std::cout << "Exception: " << excp.what() << std::endl;
+    }
+
+    std::cout << std::fixed << std::setprecision(2);
+    for (auto ptr: empPtr) {
+        std::cout << std::string(40, '=') << std::endl;
+        std::cout << ptr->toString() << "\nEarnings: " << ptr->earnings() << std::endl;
+    }
+    std::cout << std::string(40, '=') << std::endl;
+
+    // The memory must be de-allocated
+    for (auto ptr: empPtr) {
+        delete ptr;
+        ptr = nullptr;
+    }
 }

@@ -15,6 +15,7 @@ public:
     SalaryEmployee(const std::string&, const std::string&, const std::string&,
                     double = 0.0);
     virtual ~SalaryEmployee() = default;
+    // virtual ~SalaryEmployee();
 
     void setSalary(const double&); 
     double getSalary() const; 

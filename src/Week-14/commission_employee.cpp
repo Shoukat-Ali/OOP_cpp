@@ -1,3 +1,4 @@
+#include <iostream>
 #include <stdexcept>
 #include <sstream>
 #include <iomanip>
@@ -5,10 +6,17 @@
 
 CommissionEmployee::CommissionEmployee(const std::string& fn, const std::string& ln, const std::string& cnic, 
                         double sale, double rate) : Employee{fn, ln, cnic} {
+        std::cout << "Commission Employee constructor\n";
         setGrossSales(sale);
         setCommissionRate(rate);
 }
-    
+ 
+CommissionEmployee::~CommissionEmployee() {
+    std::cout << "Commission Employee destructor\n";
+    grossSales = 0.00;
+    commissionRate = 0.00;
+}
+
 
 void CommissionEmployee::setGrossSales(const double& sale) {
     if (sale < 0.0) {

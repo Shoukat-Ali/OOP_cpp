@@ -1,3 +1,4 @@
+#include <iostream>
 #include <sstream>
 #include <stdexcept>
 #include <iomanip>
@@ -5,9 +6,17 @@
 
 SalaryEmployee::SalaryEmployee(const std::string& fn, const std::string& ln, 
                     const std::string& cnic, double s) : Employee{fn, ln, cnic} {
+        std::cout << "Salary Employee constructor\n";
         setSalary(s);
 
 }
+
+
+// SalaryEmployee::~SalaryEmployee() {
+//     std::cout << "Salary Employee destructor\n";
+//     salary = 0.00;
+// }
+
 
 void SalaryEmployee::setSalary(const double& s) {
     if (s <= 0.00) {
